@@ -7,7 +7,6 @@
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
-
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -66,6 +65,7 @@ public class ServiceDescriptor {
 
         private String parameterName;
         private String jsonPath;
+        private String inputJsonPath;
         private Resource parameterId;
         private Resource rootNode;
         private IRI valueType;
@@ -78,6 +78,14 @@ public class ServiceDescriptor {
 
         public Resource getParameterId() {
             return parameterId;
+        }
+
+        public String getInputJsonPath() {
+            return inputJsonPath;
+        }
+
+        public void setInputJsonPath(String inputJsonPath) {
+            this.inputJsonPath = inputJsonPath;
         }
 
         public String getJsonPath() {
@@ -211,6 +219,13 @@ public class ServiceDescriptor {
                 .objectLiteral(model.filter(resource, MpRepositoryVocabulary.JSON_PATH, null));
         if (jsonPathOptional.isPresent()) {
             parameter.jsonPath = jsonPathOptional.get().stringValue();
+        }
+
+        // @gspinaci Parse inputJsonPath from descriptor
+        Optional<Literal> inputJsonPathOptional = Models
+                .objectLiteral(model.filter(resource, MpRepositoryVocabulary.INPUT_JSON_PATH, null));
+        if (inputJsonPathOptional.isPresent()) {
+            parameter.inputJsonPath = inputJsonPathOptional.get().stringValue();
         }
 
         for (Statement stmt : model.filter(resource, null, null)) {
