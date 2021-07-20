@@ -2,10 +2,6 @@
   "src/test/web/api/services/sparql/SparqlUtil.test": {
     "js": "/_karma_webpack_/src/test/web/api/services/sparql/SparqlUtil.test.js"
   },
-  "src/test/web/common/ts/components/tree-selector/KeyedForest.test": {
-    "css": "/_karma_webpack_/src/test/web/common/ts/components/tree-selector/KeyedForest.test-35a73eafe1d2e5a2fcf6.css",
-    "js": "/_karma_webpack_/src/test/web/common/ts/components/tree-selector/KeyedForest.test.js"
-  },
   "src/test/web/common/ts/components/tree-selector/GraphAlgorithms.test": {
     "css": "/_karma_webpack_/src/test/web/common/ts/components/tree-selector/GraphAlgorithms.test-35a73eafe1d2e5a2fcf6.css",
     "js": "/_karma_webpack_/src/test/web/common/ts/components/tree-selector/GraphAlgorithms.test.js"
@@ -17,13 +13,12 @@
     "css": "/_karma_webpack_/src/test/web/common/ts/components/tree-selector/LazyTreeSelector.test-35a73eafe1d2e5a2fcf6.css",
     "js": "/_karma_webpack_/src/test/web/common/ts/components/tree-selector/LazyTreeSelector.test.js"
   },
-  "src/test/web/common/ts/forms/CardinalitySupport.test": {
-    "css": "/_karma_webpack_/src/test/web/common/ts/forms/CardinalitySupport.test-fd981ed2574d86d9e7b8.css",
-    "js": "/_karma_webpack_/src/test/web/common/ts/forms/CardinalitySupport.test.js"
+  "src/test/web/common/ts/components/tree-selector/KeyedForest.test": {
+    "css": "/_karma_webpack_/src/test/web/common/ts/components/tree-selector/KeyedForest.test-35a73eafe1d2e5a2fcf6.css",
+    "js": "/_karma_webpack_/src/test/web/common/ts/components/tree-selector/KeyedForest.test.js"
   },
-  "src/test/web/common/ts/forms/DatePickerInput.test": {
-    "css": "/_karma_webpack_/src/test/web/common/ts/forms/DatePickerInput.test-fd981ed2574d86d9e7b8.css",
-    "js": "/_karma_webpack_/src/test/web/common/ts/forms/DatePickerInput.test.js"
+  "src/test/web/common/ts/events/EventsStore.test": {
+    "js": "/_karma_webpack_/src/test/web/common/ts/events/EventsStore.test.js"
   },
   "src/test/web/common/ts/forms/AutocompleteInput.test": {
     "css": "/_karma_webpack_/src/test/web/common/ts/forms/AutocompleteInput.test-fd981ed2574d86d9e7b8.css",
@@ -33,56 +28,55 @@
     "css": "/_karma_webpack_/src/test/web/common/ts/components/tree-selector/TreeSelection.test-35a73eafe1d2e5a2fcf6.css",
     "js": "/_karma_webpack_/src/test/web/common/ts/components/tree-selector/TreeSelection.test.js"
   },
-  "src/test/web/common/ts/events/EventsStore.test": {
-    "js": "/_karma_webpack_/src/test/web/common/ts/events/EventsStore.test.js"
-  },
-  "src/test/web/common/ts/forms/PlainTextInput.test": {
-    "css": "/_karma_webpack_/src/test/web/common/ts/forms/PlainTextInput.test-fd981ed2574d86d9e7b8.css",
-    "js": "/_karma_webpack_/src/test/web/common/ts/forms/PlainTextInput.test.js"
-  },
-  "src/test/web/common/ts/forms/SemanticForm.test": {
-    "css": "/_karma_webpack_/src/test/web/common/ts/forms/SemanticForm.test-fd981ed2574d86d9e7b8.css",
-    "js": "/_karma_webpack_/src/test/web/common/ts/forms/SemanticForm.test.js"
-  },
   "src/test/web/common/ts/forms/FieldCommonTypes.test": {
     "css": "/_karma_webpack_/src/test/web/common/ts/forms/FieldCommonTypes.test-2b6d49cf0f4db0d7eb7a.css",
     "js": "/_karma_webpack_/src/test/web/common/ts/forms/FieldCommonTypes.test.js"
-  },
-  "src/test/web/common/ts/forms/SelectInput.test": {
-    "css": "/_karma_webpack_/src/test/web/common/ts/forms/SelectInput.test-fd981ed2574d86d9e7b8.css",
-    "js": "/_karma_webpack_/src/test/web/common/ts/forms/SelectInput.test.js"
-  },
-  "src/test/web/common/ts/forms/static/Label.test": {
-    "css": "/_karma_webpack_/src/test/web/common/ts/forms/static/Label.test-2b6d49cf0f4db0d7eb7a.css",
-    "js": "/_karma_webpack_/src/test/web/common/ts/forms/static/Label.test.js"
   },
   "src/test/web/common/ts/forms/LdpPersistence.test": {
     "css": "/_karma_webpack_/src/test/web/common/ts/forms/LdpPersistence.test-2b6d49cf0f4db0d7eb7a.css",
     "js": "/_karma_webpack_/src/test/web/common/ts/forms/LdpPersistence.test.js"
   },
+  "src/test/web/common/ts/forms/PersistenceUtils.test": {
+    "css": "/_karma_webpack_/src/test/web/common/ts/forms/PersistenceUtils.test-2b6d49cf0f4db0d7eb7a.css",
+    "js": "/_karma_webpack_/src/test/web/common/ts/forms/PersistenceUtils.test.js"
+  },
+  "src/test/web/common/ts/forms/DatePickerInput.test": {
+    "css": "/_karma_webpack_/src/test/web/common/ts/forms/DatePickerInput.test-fd981ed2574d86d9e7b8.css",
+    "js": "/_karma_webpack_/src/test/web/common/ts/forms/DatePickerInput.test.js"
+  },
+  "src/test/web/common/ts/forms/CardinalitySupport.test": {
+    "css": "/_karma_webpack_/src/test/web/common/ts/forms/CardinalitySupport.test-fd981ed2574d86d9e7b8.css",
+    "js": "/_karma_webpack_/src/test/web/common/ts/forms/CardinalitySupport.test.js"
+  },
+  "src/test/web/common/ts/forms/PlainTextInput.test": {
+    "css": "/_karma_webpack_/src/test/web/common/ts/forms/PlainTextInput.test-fd981ed2574d86d9e7b8.css",
+    "js": "/_karma_webpack_/src/test/web/common/ts/forms/PlainTextInput.test.js"
+  },
+  "src/test/web/common/ts/forms/SelectInput.test": {
+    "css": "/_karma_webpack_/src/test/web/common/ts/forms/SelectInput.test-fd981ed2574d86d9e7b8.css",
+    "js": "/_karma_webpack_/src/test/web/common/ts/forms/SelectInput.test.js"
+  },
   "src/test/web/common/ts/forms/SingleValueInput.test": {
     "css": "/_karma_webpack_/src/test/web/common/ts/forms/SingleValueInput.test-2b6d49cf0f4db0d7eb7a.css",
     "js": "/_karma_webpack_/src/test/web/common/ts/forms/SingleValueInput.test.js"
+  },
+  "src/test/web/common/ts/forms/static/Description.test": {
+    "css": "/_karma_webpack_/src/test/web/common/ts/forms/static/Description.test-2b6d49cf0f4db0d7eb7a.css",
+    "js": "/_karma_webpack_/src/test/web/common/ts/forms/static/Description.test.js"
+  },
+  "src/test/web/common/ts/json/3rd-party/data.maybe.test": {
+    "js": "/_karma_webpack_/src/test/web/common/ts/json/3rd-party/data.maybe.test.js"
+  },
+  "src/test/web/common/ts/forms/static/Label.test": {
+    "css": "/_karma_webpack_/src/test/web/common/ts/forms/static/Label.test-2b6d49cf0f4db0d7eb7a.css",
+    "js": "/_karma_webpack_/src/test/web/common/ts/forms/static/Label.test.js"
   },
   "src/test/web/common/ts/forms/RawSparqlPersistence.test": {
     "css": "/_karma_webpack_/src/test/web/common/ts/forms/RawSparqlPersistence.test-2b6d49cf0f4db0d7eb7a.css",
     "js": "/_karma_webpack_/src/test/web/common/ts/forms/RawSparqlPersistence.test.js"
   },
-  "src/test/web/common/ts/forms/PersistenceUtils.test": {
-    "css": "/_karma_webpack_/src/test/web/common/ts/forms/PersistenceUtils.test-2b6d49cf0f4db0d7eb7a.css",
-    "js": "/_karma_webpack_/src/test/web/common/ts/forms/PersistenceUtils.test.js"
-  },
-  "src/test/web/common/ts/modules/Registry.test": {
-    "js": "/_karma_webpack_/src/test/web/common/ts/modules/Registry.test.js"
-  },
   "src/test/web/common/ts/json/JsonCore.test": {
     "js": "/_karma_webpack_/src/test/web/common/ts/json/JsonCore.test.js"
-  },
-  "src/test/web/common/ts/json/3rd-party/immutable.test": {
-    "js": "/_karma_webpack_/src/test/web/common/ts/json/3rd-party/immutable.test.js"
-  },
-  "src/test/web/common/ts/json/3rd-party/data.maybe.test": {
-    "js": "/_karma_webpack_/src/test/web/common/ts/json/3rd-party/data.maybe.test.js"
   },
   "src/test/web/common/ts/persistence/ComponentPersistence.test": {
     "js": "/_karma_webpack_/src/test/web/common/ts/persistence/ComponentPersistence.test.js"
@@ -90,9 +84,11 @@
   "src/test/web/common/ts/rdf/core/XsdDatatypeValidation.test": {
     "js": "/_karma_webpack_/src/test/web/common/ts/rdf/core/XsdDatatypeValidation.test.js"
   },
-  "src/test/web/common/ts/forms/static/Description.test": {
-    "css": "/_karma_webpack_/src/test/web/common/ts/forms/static/Description.test-2b6d49cf0f4db0d7eb7a.css",
-    "js": "/_karma_webpack_/src/test/web/common/ts/forms/static/Description.test.js"
+  "src/test/web/common/ts/modules/Registry.test": {
+    "js": "/_karma_webpack_/src/test/web/common/ts/modules/Registry.test.js"
+  },
+  "src/test/web/common/ts/rdf/core/Rdf.test": {
+    "js": "/_karma_webpack_/src/test/web/common/ts/rdf/core/Rdf.test.js"
   },
   "src/test/web/common/ts/rdf/formats/JsObjectGraph.test": {
     "js": "/_karma_webpack_/src/test/web/common/ts/rdf/formats/JsObjectGraph.test.js"
@@ -100,51 +96,55 @@
   "src/test/web/common/ts/sparql/QueryBinder.test": {
     "js": "/_karma_webpack_/src/test/web/common/ts/sparql/QueryBinder.test.js"
   },
+  "src/test/web/common/ts/sparql/SparqlClient.test": {
+    "css": "/_karma_webpack_/src/test/web/common/ts/sparql/SparqlClient.test-6c6ca085a76c10a150fd.css",
+    "js": "/_karma_webpack_/src/test/web/common/ts/sparql/SparqlClient.test.js"
+  },
   "src/test/web/common/ts/services/TemplateService.test": {
     "js": "/_karma_webpack_/src/test/web/common/ts/services/TemplateService.test.js"
+  },
+  "src/test/web/common/ts/sparql/SparqlUtil.test": {
+    "js": "/_karma_webpack_/src/test/web/common/ts/sparql/SparqlUtil.test.js"
   },
   "src/test/web/common/ts/sparql/setBindings.test": {
     "js": "/_karma_webpack_/src/test/web/common/ts/sparql/setBindings.test.js"
   },
-  "src/test/web/common/ts/rdf/core/Rdf.test": {
-    "js": "/_karma_webpack_/src/test/web/common/ts/rdf/core/Rdf.test.js"
+  "src/test/web/common/ts/util/BrowserPersistence.test": {
+    "js": "/_karma_webpack_/src/test/web/common/ts/util/BrowserPersistence.test.js"
   },
   "src/test/web/common/ts/rdf/formats/turtle.test": {
     "js": "/_karma_webpack_/src/test/web/common/ts/rdf/formats/turtle.test.js"
   },
-  "src/test/web/common/ts/util/BrowserPersistence.test": {
-    "js": "/_karma_webpack_/src/test/web/common/ts/util/BrowserPersistence.test.js"
-  },
-  "src/test/web/components/semantic/graph/Graph.test": {
-    "css": "/_karma_webpack_/src/test/web/components/semantic/graph/Graph.test-a813309330165f64ef8d.css",
-    "js": "/_karma_webpack_/src/test/web/components/semantic/graph/Graph.test.js"
+  "src/test/web/common/ts/forms/SemanticForm.test": {
+    "css": "/_karma_webpack_/src/test/web/common/ts/forms/SemanticForm.test-fd981ed2574d86d9e7b8.css",
+    "js": "/_karma_webpack_/src/test/web/common/ts/forms/SemanticForm.test.js"
   },
   "src/test/web/components/semantic/graph/SemanticGraph.test": {
     "css": "/_karma_webpack_/src/test/web/components/semantic/graph/SemanticGraph.test-b7169419a932d70411cf.css",
     "js": "/_karma_webpack_/src/test/web/components/semantic/graph/SemanticGraph.test.js"
   },
-  "src/test/web/components/semantic/chart/SemanticChart.test": {
-    "css": "/_karma_webpack_/src/test/web/components/semantic/chart/SemanticChart.test-491f7d3f84f45e5744b6.css",
-    "js": "/_karma_webpack_/src/test/web/components/semantic/chart/SemanticChart.test.js"
-  },
-  "src/test/web/common/ts/sparql/SparqlClient.test": {
-    "css": "/_karma_webpack_/src/test/web/common/ts/sparql/SparqlClient.test-6c6ca085a76c10a150fd.css",
-    "js": "/_karma_webpack_/src/test/web/common/ts/sparql/SparqlClient.test.js"
-  },
-  "src/test/web/components/assertions/AssertionsStore.test": {
-    "js": "/_karma_webpack_/src/test/web/components/assertions/AssertionsStore.test.js"
-  },
-  "src/test/web/common/ts/sparql/SparqlUtil.test": {
-    "js": "/_karma_webpack_/src/test/web/common/ts/sparql/SparqlUtil.test.js"
-  },
-  "src/test/web/components/semantic/search/SearchSummary.test": {
-    "js": "/_karma_webpack_/src/test/web/components/semantic/search/SearchSummary.test.js"
-  },
-  "src/test/web/components/semantic/graph/GraphInternals.test": {
-    "js": "/_karma_webpack_/src/test/web/components/semantic/graph/GraphInternals.test.js"
+  "src/test/web/components/semantic/graph/Graph.test": {
+    "css": "/_karma_webpack_/src/test/web/components/semantic/graph/Graph.test-a813309330165f64ef8d.css",
+    "js": "/_karma_webpack_/src/test/web/components/semantic/graph/Graph.test.js"
   },
   "src/test/web/components/semantic/table/SemanticTable.test": {
     "css": "/_karma_webpack_/src/test/web/components/semantic/table/SemanticTable.test-252753559ec6f213e808.css",
     "js": "/_karma_webpack_/src/test/web/components/semantic/table/SemanticTable.test.js"
+  },
+  "src/test/web/components/semantic/search/SearchSummary.test": {
+    "js": "/_karma_webpack_/src/test/web/components/semantic/search/SearchSummary.test.js"
+  },
+  "src/test/web/common/ts/json/3rd-party/immutable.test": {
+    "js": "/_karma_webpack_/src/test/web/common/ts/json/3rd-party/immutable.test.js"
+  },
+  "src/test/web/components/assertions/AssertionsStore.test": {
+    "js": "/_karma_webpack_/src/test/web/components/assertions/AssertionsStore.test.js"
+  },
+  "src/test/web/components/semantic/chart/SemanticChart.test": {
+    "css": "/_karma_webpack_/src/test/web/components/semantic/chart/SemanticChart.test-491f7d3f84f45e5744b6.css",
+    "js": "/_karma_webpack_/src/test/web/components/semantic/chart/SemanticChart.test.js"
+  },
+  "src/test/web/components/semantic/graph/GraphInternals.test": {
+    "js": "/_karma_webpack_/src/test/web/components/semantic/graph/GraphInternals.test.js"
   }
 }
