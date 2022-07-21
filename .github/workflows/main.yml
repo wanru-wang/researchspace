@@ -85,58 +85,7 @@ jobs:
         with:
           arguments: buildZip
 
-      - name: docker build
-        if: contains(github.event.pull_request.labels.*.name, 'build_image') || github.ref == 'refs/heads/master' || contains(github.ref, 'build-docker')
-        run: |
-          export DOCKER_FOLDER="$(pwd)/dist/docker"
-          cp build/libs/ROOT-*.war $DOCKER_FOLDER/platform/ROOT.war
-          mkdir $DOCKER_FOLDER/platform/config
-          cp src/main/resources/org/researchspace/apps/default/config/shiro.ini $DOCKER_FOLDER/platform/config/
-          cp -r dist/migrations $DOCKER_FOLDER/platform
-          cd $DOCKER_FOLDER/platform
-          docker build -t researchspace/platform-ci:${DATE}_${GITHUB_SHA} .
-
-      - name: get branch local name
-        id: get-branch
-        if: contains(github.ref, 'build-docker')
-        run: |
-          branch=$(echo ${{github.ref}} | cut -d "/" -f 4)
-          echo "::set-output name=branch-local-name::$branch"
-
-      - name: tag docker image for non-master branch
-        if: contains(github.ref, 'build-docker')
-        run: docker tag researchspace/platform-ci:${DATE}_${GITHUB_SHA} researchspace/platform-ci:${{steps.get-branch.outputs.branch-local-name}}
-
-      - name: tag docker image for master branch
-        if: github.ref == 'refs/heads/master'
-        run: docker tag researchspace/platform-ci:${DATE}_${GITHUB_SHA} researchspace/platform-ci:latest
-
-      - name: Push docker image
-        if: contains(github.event.pull_request.labels.*.name, 'build_image') || github.ref == 'refs/heads/master' || contains(github.ref, 'build-docker')
-        env:
-          DOCKER_HUB_USER: ${{ secrets.DOCKER_HUB_USER }}
-          DOCKER_HUB_PASSWORD: ${{ secrets.DOCKER_HUB_PASSWORD }}
-        run: |
-          echo "$DOCKER_HUB_PASSWORD" | docker login --username ${DOCKER_HUB_USER} --password-stdin
-          docker push researchspace/platform-ci:${DATE}_${GITHUB_SHA}
-
-      - name: Push latest tag for non-master
-        if: contains(github.ref, 'build-docker')
-        env:
-          DOCKER_HUB_USER: ${{ secrets.DOCKER_HUB_USER }}
-          DOCKER_HUB_PASSWORD: ${{ secrets.DOCKER_HUB_PASSWORD }}
-        run: |
-          echo "$DOCKER_HUB_PASSWORD" | docker login --username ${DOCKER_HUB_USER} --password-stdin
-          docker push researchspace/platform-ci:${{steps.get-branch.outputs.branch-local-name}}
-
-      - name: Push latest tag for master
-        if: github.ref == 'refs/heads/master'
-        env:
-          DOCKER_HUB_USER: ${{ secrets.DOCKER_HUB_USER }}
-          DOCKER_HUB_PASSWORD: ${{ secrets.DOCKER_HUB_PASSWORD }}
-        run: |
-          echo "$DOCKER_HUB_PASSWORD" | docker login --username ${DOCKER_HUB_USER} --password-stdin
-          docker push researchspace/platform-ci:latest
+      
 
       # upload zip bundle 
       - if: contains(github.event.pull_request.labels.*.name, 'build_zip') || github.ref == 'refs/heads/master'
